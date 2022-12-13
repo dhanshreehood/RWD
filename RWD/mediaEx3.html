@@ -1,0 +1,67 @@
+<!-- media shrinking at the end it gets scroll 1 by 1 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .container {
+            column-count: 2;
+            column-gap: 10px;
+            column-width: 50%;
+            padding: 10px;
+            align-content: center;
+        }
+
+        #img1, #img2, #img3, #img4 {
+            height: auto;
+            width: 50%;
+
+        }
+
+        /*For mobiles*/
+        @media screen and (max-width: 480px) {
+            .container {
+                width: 100%;
+                padding: 10px 10px 10px 10px;
+                columns: unset;
+            }
+        }
+
+        /*For tablets*/
+        @media screen and (min-width: 480px)and (max-width: 768px) {
+            .container {
+                width: auto;
+                padding: 15px 15px 15px 15px;
+                columns: unset;
+                column-count: 2;
+                column-gap: 10px;
+                column-width: 50%;
+            }
+        }
+
+        /* for all screens
+        @media all{
+
+            .container{
+                background-color: antiquewhite;
+
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img id="img1" src="rwd1.jfif" alt="" />
+        <img id="img2" src="rwd2.jfif" alt="" />
+        <img id="img3" src="rwd3.jfif" alt="" />
+        <img id="img4" src="rwd4.jfif" alt="" />
+    </div>
+
+</body>
+
+</html>

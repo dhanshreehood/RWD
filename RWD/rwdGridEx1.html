@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main_container {
+            display: grid;
+            grid-template-columns: repeat(3, 3fr);
+            gap: 30px;
+            grid-auto-rows: minmax(120px, auto);
+        }
+
+        #div1 {
+            text-align: center;
+            background-color: rgb(184, 235, 253);
+            border: 2px solid rgb(72, 52, 171);
+            grid-column: 1;
+        }
+
+        #div2 {
+            text-align: center;
+            background-color: rgb(170, 233, 195);
+            border: 2px solid rgb(128, 0, 107);
+            grid-column: 2;
+        }
+
+        #div3 {
+            text-align: center;
+            background-color: rgb(204, 184, 236);
+            border: 2px solid rgba(223, 173, 36, 0.992);
+            grid-column: 3;
+        }
+
+        #div4 {
+            text-align: center;
+            background-color: rgb(226, 165, 244);
+            border: 2px solid rgb(223, 30, 30);
+            grid-column: 1;
+        }
+
+        #div5 {
+            text-align: center;
+            background-color: rgb(229, 217, 154);
+            border: 2px solid rgb(116, 17, 230);
+            grid-column: 2;
+        }
+
+        #div6 {
+            text-align: center;
+            background-color: rgb(244, 204, 144);
+            border: 2px solid rgb(210, 110, 35);
+            grid-column: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main_container">
+        <div id="div1"><h1>Div 1</h1></div>
+        <div id="div2"><h1>Div 2</h1></div>
+        <div id="div3"><h1>Div 3</h1></div>
+        <div id="div4"><h1>Div 4</h1></div>
+        <div id="div5"><h1>Div 5</h1></div>
+        <div id="div6"><h1>Div 6</h1></div>
+    </div>
+</body>
+
+</html>

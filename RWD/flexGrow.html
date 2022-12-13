@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flexContainer {
+            display: flex;
+            background-color: darksalmon;
+            /* flex-direction: column; */
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 10px;
+            column-gap: 10px;
+            /* gap:10px; */
+        }
+
+        /* Child Selector (>) */
+        .flexContainer>div {
+            border: 2px solid rgb(19, 19, 20);
+            background-color: rgb(45, 173, 173);
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Flex grow property</h3>
+    <div class="flexContainer">
+        <div style = "flex-grow: 1;">div 1</div>
+        <div style = "flex-grow: 1;">div 2</div>
+        <div style = "flex-grow: 3;">div 3</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main_container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            grid-auto-rows: minmax(120px, auto);
+        }
+
+        #div1 {
+            text-align: center;
+            background-image: url("rwd1.jfif");
+            border: 2px solid rgb(72, 52, 171);
+            grid-column: 1;
+        }
+
+        #div2 {
+            text-align: center;
+            background-image: url("rwd2.jfif");
+            border: 2px solid rgb(128, 0, 107);
+            grid-column: 2;
+        }
+
+        #div3 {
+            text-align: center;
+            background-image: url("rwd3.jfif");
+            border: 2px solid rgba(223, 173, 36, 0.992);
+            grid-column: 3;
+        }
+
+        #div4 {
+            text-align: center;
+            background-image: url("rwd4.jfif");
+            grid-column: 4;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="main_container">
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <div id="div4"></div>
+    </div>
+</body>
+
+</html>

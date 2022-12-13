@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main_container {
+            background-color: bisque;
+            display: grid;
+            grid-template-columns: repeat(4, 6fr);
+            gap: 10px;
+            grid-auto-rows: minmax(120px, auto);
+        }
+
+        #div1 {
+            text-align: center;
+            background-color: rgb(184, 235, 253);
+            border: 2px solid rgb(72, 52, 171);
+            grid-column: 1;
+        }
+
+        #div2 {
+            text-align: center;
+            background-color: rgb(170, 233, 195);
+            border: 2px solid rgb(128, 0, 107);
+            grid-column: 2;
+        }
+
+        #div3 {
+            text-align: center;
+            background-color: rgb(204, 184, 236);
+            border: 2px solid rgba(223, 173, 36, 0.992);
+            grid-column: 3;
+        }
+
+        #div4 {
+            text-align: center;
+            background-color: rgb(226, 165, 244);
+            border: 2px solid rgb(223, 30, 30);
+            grid-column: 4;
+        }
+
+        #div5, #div9, #div13, #div17, #div21 {
+            padding: 0px;
+            height: 50px;
+            text-align: center;
+            background-color: rgb(212, 236, 238);
+            border: 2px solid rgb(116, 17, 230);
+            grid-column: 1;
+        }
+
+        #div6, #div10, #div14, #div18, #div22 {
+            padding: 0px;
+
+            height: 50px;
+            text-align: center;
+            background-color: rgb(225, 248, 218);
+            border: 2px solid rgb(210, 110, 35);
+            grid-column: 2;
+        }
+        #div7, #div11, #div15, #div19, #div23 {
+            padding: 0px;
+
+            height: 50px;
+            text-align: center;
+            background-color: rgb(244, 231, 254);
+            border: 2px solid rgb(210, 110, 35);
+            grid-column: 3;
+        }
+        #div8, #div12, #div16, #div20, #div24 {
+            padding: 0px;
+
+            height: 50px;
+            text-align: center;
+            background-color: rgb(245, 196, 228);
+            border: 2px solid rgb(210, 110, 35);
+            grid-column: 4;
+        }        
+    </style>
+</head>
+
+<body>
+    <div id="main_container">
+        <div id="div1"><h1>Id</h1></div>
+        <div id="div2"><h1>Name</h1></div>
+        <div id="div3"><h1>Age</h1></div>
+        <div id="div4"><h1>City</h1></div>
+        
+        <div id="div5">01</div>
+        <div id="div6">A</div>
+        <div id="div7">20</div>
+        <div id="div8">Pune</div>
+
+        <div id="div9">02</div>
+        <div id="div10">B</div>
+        <div id="div11">30</div>
+        <div id="div12">Mumbai</div>
+
+        <div id="div13">03</div>
+        <div id="div14">C</div>
+        <div id="div15">20</div>
+        <div id="div16">Pune</div>
+
+        <div id="div17">04</div>
+        <div id="div18">D</div>
+        <div id="div19">25</div>
+        <div id="div20">Hyderabad</div>
+
+        <div id="div21">05</div>
+        <div id="div22">E</div>
+        <div id="div23">30</div>
+        <div id="div24">Pune</div>
+    </div>
+</body>
+
+</html>

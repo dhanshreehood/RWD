@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #div_main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        #div_main>div {
+            width: 300px;
+            height: 300px;
+        }
+
+        #img2 {
+            width: 800px;
+            height: 400px;
+        }
+
+        #content {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        #content>div {
+            width: auto;
+            height: auto;
+            border: 2px solid rgb(255, 255, 255);
+            text-align: left;
+            overflow: hidden;
+            padding-left: 5px;
+            background-color: rgb(232, 243, 200);
+        }
+
+        #cont4 {
+            border: 2px solid rgb(185, 235, 255);
+            width: 500px;
+            height: auto;
+            margin-top: 10px;
+            text-align: left;
+            padding-left: 5px;
+            background-color: rgb(185, 235, 255);
+        }
+
+        header {
+            border: 2px solid rgb(252, 204, 212);
+            height: auto;
+            margin-bottom: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgb(252, 204, 212);
+        }
+
+        footer {
+            border: 2px solid gainsboro;
+            height: 50px;
+            margin-top: 10px;
+            text-align: center;
+            padding-top: 5px;
+            background-color: rgb(234, 182, 235);
+        }
+
+        #nav {
+            padding: 30px;
+            background-color: rgb(252, 204, 212);
+        }
+
+        #content2 {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        #btn {
+            margin-right: 0px;
+            border-radius: 10px;
+            margin-top: 50px;
+            height: 40px;
+            width: 300px;
+            margin-left: 50px;
+            background-color: rgb(129, 223, 143);
+        }
+
+        #logo {
+            padding-left: 10px;
+            padding-top: 20px;
+            background-color: rgb(252, 204, 212);
+        }
+
+        #divbtn{
+            display: flex;
+            background-color: rgb(255, 237, 216);
+            padding-left: 190px;
+        }
+
+        link{
+            padding:100px;
+        }
+
+
+        /* Media query */
+        @media screen and (max-width: 480px) {
+            #content {
+                display: unset;
+                max-width: 100%;
+                height: auto;
+            }
+
+            #div_main {
+                display: unset;
+                max-width: 100%;
+                height: auto;
+            }
+
+            header {
+                display: unset;
+                max-width: 100%;
+                height: auto;
+            }
+
+            #content2 {
+                display: unset;
+                max-width: 100%;
+                height: auto;
+            }
+
+            #btn {
+                padding-left: 80px;
+                width: 150px;
+                height: auto;
+            }
+
+            #cont4 {
+                max-width: 100%;
+                height: auto;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            #divbtn{
+                padding-left: 10px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <header>
+        <div id="logo" style="flex-grow:10; overflow: hidden;" id="LOGO">
+            <h3>LOGO</h3>
+        </div>
+        <div id="nav">
+            <a href="#" id="link"><b>Home</b></a>
+            <a href="#" id="link"><b>About Us</b></a>
+            <a href="#" id="link"><b>Services</b></a>
+            <a href="#" id="link"><b>Contact</b></a>
+        </div>
+    </header>
+
+    <!-- middle section -->
+    <div id="div_main">
+        <div style="flex-grow: 10; background-size:cover; overflow: hidden; " id="img1">
+            <img src="plogo.jpg" alt="">
+        </div>
+        <div style="flex-grow: 10; background-size: cover; overflow: hidden;">
+            <img src="bird.jfif" alt="" id="img2">
+        </div>
+    </div>
+
+    <div id="content">
+        <div style="flex-grow: 6;" id="cont1">
+            <h3>Sample Heading 1</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus aut eveniet molestiae beatae
+                non, amet commodi enim sint adipisci quas voluptate animi eos tenetur perspiciatis, repudiandae
+                excepturi quod magni consequuntur!
+            </p>
+        </div>
+
+        <div style="flex-grow: 6;" id="cont2">
+            <h3>Sample Heading 2</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus aut eveniet molestiae beatae
+                non, amet commodi enim sint adipisci quas voluptate animi eos tenetur perspiciatis, repudiandae
+                excepturi quod magni consequuntur!
+            </p>
+        </div>
+
+        <div style="flex-grow: 6;" id="cont3">
+            <h3>Sample Heading 3</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus aut eveniet molestiae beatae
+                non, amet commodi enim sint adipisci quas voluptate animi eos tenetur perspiciatis, repudiandae
+                excepturi quod magni consequuntur!
+            </p>
+        </div>
+    </div>
+
+    <div id="content2">
+        <div style="flex-grow: 6;" id="cont4">
+            <h3>Sample Heading 3</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus aut eveniet molestiae beatae
+                non, amet commodi enim sint adipisci quas voluptate animi eos tenetur perspiciatis, repudiandae
+                excepturi quod magni consequuntur!
+            </p>
+        </div>
+
+        <div style="flex-grow: 6;" id="divbtn">
+            <button id="btn"> CLICK HERE</button>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer>
+        <p>All Right Reserved | @ 2016</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!-- media shrinking without changing it's position: -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhanshree Hood & Vijayalaxmi Yelchalwar</title>
+    <style>
+
+        #rwd4 ,#rwd1, #rwd2 , #rwd3 {
+            height: auto;
+            width: 100%;
+        }
+
+        .bichkaMaal {
+            column-count: 2;
+            column-gap: 50px;
+            column-width: 50%;
+            padding: 10px;
+        }
+
+        @media screen and (min-width:"480px") and (max-width:"768px") {
+            .bichkaMaal {   
+            column-count: 2;
+            column-gap: 50px;
+            column-width: 50%;
+            width: 100%;
+            padding: 10px;
+            columns: unset;
+            }
+        }
+
+        @media screen and (max-width:"480px") {
+            .bichkaMaal {   
+            columns: unset;
+            width: auto;
+            padding: 10px;
+            columns: unset;
+            }
+        }
+    </style>
+</head>
+
+<body>
+</body>
+<div class="bichkaMaal">
+    <img src="rwd1.jfif" alt="rwd1" id="rwd1">
+    <img src="rwd2.jfif" alt="rwd2" id="rwd2"><br><br><br>
+    <img src="rwd3.jfif" alt="rwd3" id="rwd3">
+    <img src="rwd4.jfif" alt="rwd4" id="rwd4">
+</div>
+</body>
+
+</html>
